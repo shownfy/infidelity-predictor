@@ -11,11 +11,7 @@ dbt_packages/
 logs/
 
 # DuckDB
-*.duckdb
 *.duckdb.wal
-
-# ML artifacts (large files)
-models_ml/*.pkl
 
 # IDE
 .vscode/
