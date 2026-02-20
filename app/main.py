@@ -523,7 +523,7 @@ def main():
 
         with res_col1:
             gauge_fig = create_gauge_chart(prob)
-            st.plotly_chart(gauge_fig, width="stretch")
+            st.plotly_chart(gauge_fig, use_container_width=True)
 
         with res_col2:
             # HEXACO Radar
@@ -536,12 +536,12 @@ def main():
                 "openness": openness,
             }
             radar_fig = create_hexaco_radar(personality_scores, ref_df)
-            st.plotly_chart(radar_fig, width="stretch")
+            st.plotly_chart(radar_fig, use_container_width=True)
 
         # SHAP Waterfall
         st.markdown("#### 要因分析")
         waterfall_fig = create_shap_waterfall(shap_vals_positive, feature_names, base_val)
-        st.plotly_chart(waterfall_fig, width="stretch")
+        st.plotly_chart(waterfall_fig, use_container_width=True)
 
         # Interpretation
         st.markdown("#### 解釈のポイント")
