@@ -98,7 +98,10 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     with open(MODEL_PATH, "rb") as f:
-        return pickle.load(f)
+        artifacts = pickle.load(f)
+    # Recreate SHAP explainer from model (avoids numba pickle incompatibility)
+    artifacts["explainer"] = shap.TreeExplainer(artifacts["model"])
+    return artifacts
 
 
 @st.cache_resource

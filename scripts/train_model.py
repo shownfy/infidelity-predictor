@@ -120,12 +120,11 @@ def compute_shap(model, X):
 
 
 def save_artifacts(model, explainer, imputer, feature_names):
-    """Save model, explainer, and metadata."""
+    """Save model, imputer, and metadata (explainer is recreated at load time)."""
     os.makedirs(MODEL_DIR, exist_ok=True)
 
     artifacts = {
         "model": model,
-        "explainer": explainer,
         "imputer": imputer,
         "feature_names": feature_names,
     }
@@ -134,6 +133,7 @@ def save_artifacts(model, explainer, imputer, feature_names):
     with open(output_path, "wb") as f:
         pickle.dump(artifacts, f)
     print(f"\n  Saved model artifacts to {output_path}")
+    print("  (SHAP explainer is excluded from pickle for cross-version compatibility)")
 
 
 def main():
