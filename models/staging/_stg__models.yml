@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_fair__affairs
+    description: "Cleaned Fair's Affairs dataset with binary infidelity target."
+  - name: stg_gss__infidelity
+    description: "Cleaned GSS EVSTRAY/XMARSEX infidelity behavior and attitudes."
+  - name: stg_selterman__predictors
+    description: "Cleaned Selterman infidelity predictors with relationship variables."
+  - name: stg_reinhardt__hexaco
+    description: "Cleaned Reinhardt HEXACO Honesty-Humility and relationship dishonesty."
+  - name: stg_japan__judicial
+    description: "Cleaned Japanese judicial statistics on divorce filing motives."
+  - name: stg_japan__vital
+    description: "Cleaned Japanese vital statistics on divorce rates."
+  - name: stg_openpsych__big_five
+    description: "Cleaned Open Psychometrics Big Five factor scores."

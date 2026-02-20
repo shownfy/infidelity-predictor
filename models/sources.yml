@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main_raw
+    description: "Seed data loaded from CSV files"
+    tables:
+      - name: fair_affairs_raw
+        description: "Fair's Extramarital Affairs Dataset (1978). 6,366 observations from Psychology Today survey."
+      - name: gss_infidelity
+        description: "General Social Survey - EVSTRAY/XMARSEX variables. Extramarital sex behavior and attitudes."
+      - name: selterman_predictors
+        description: "Selterman/Vowels OSF Dataset. Infidelity predictors with relationship variables."
+      - name: reinhardt_hexaco
+        description: "Reinhardt & Reinhard (2023) HEXACO Honesty-Humility and romantic relationship dishonesty."
+      - name: japan_judicial_stats
+        description: "Japanese judicial statistics - divorce filing motives including infidelity (不貞行為)."
+      - name: japan_vital_stats
+        description: "Japanese vital statistics - divorce counts by age, marriage duration."
+      - name: big_five_raw
+        description: "Open Psychometrics Big Five personality test responses (19,719 respondents)."

@@ -1,0 +1,12 @@
+streamlit
+dbt-core
+dbt-duckdb
+duckdb
+scikit-learn
+shap
+plotly
+pandas
+numpy
+statsmodels
+pyreadstat
+requests

@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# ML artifacts (large files)
+models_ml/*.pkl
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+.claude/
+
+# dbt user config
+.user.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Seeds (regeneratable)
+# seeds/*.csv

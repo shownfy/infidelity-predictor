@@ -1,0 +1,7 @@
+infidelity_predictor:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "infidelity_predictor.duckdb"
+      threads: 4

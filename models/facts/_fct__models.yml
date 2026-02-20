@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fct_infidelity
+    description: "Fact table combining infidelity events from Fair, GSS, Selterman, and Reinhardt."

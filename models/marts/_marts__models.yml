@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: marts_infidelity_features
+    description: "Wide table joining person, personality, relationship dimensions with infidelity facts. Used as ML training input."

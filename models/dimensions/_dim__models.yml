@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_person
+    description: "Person dimension combining demographics from Fair, GSS, Selterman, and Reinhardt."
+  - name: dim_personality
+    description: "Personality dimension with HEXACO 6 factors."
+  - name: dim_relationship
+    description: "Relationship attributes dimension."
+  - name: dim_japan_context
+    description: "Japanese infidelity/divorce statistics for contextual display."
+  - name: dim_personality_reference
+    description: "Personality trait distribution reference for normalization."
